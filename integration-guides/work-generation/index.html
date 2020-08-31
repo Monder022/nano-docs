@@ -1622,9 +1622,8 @@ blake2b(\text{nonce} || \text{prev_block_hash}) \ge \text{threshold}
 </script>
 </div>
 <h3 id="difficulty-thresholds">Difficulty thresholds<a class="headerlink" href="#difficulty-thresholds" title="Permanent link">&para;</a></h3>
-<p>The mainnet's base difficulty threshold is currently <code>ffffffc000000000</code> for all epoch v1 blocks. For a block to be valid, its work field must satisfy the above work equations using this value for threshold. Nodes also prioritize the order in which they confirm transactions based on how far above this threshold the work value is. This only happens in case of saturation.</p>
-<p>Due to prioritization, it may be desirable to generate work further above the threshold to guarantee faster processing by the network. To assist integrations with managing these work difficulty levels, nodes monitor the trend of difficulty seen on unconfirmed blocks, and expose that value via the <a href="../../commands/rpc-protocol/#active_difficulty"><code>active_difficulty</code></a> RPC.</p>
-<p>After the next <a href="../../releases/network-upgrades/#increased-work-difficulty">network upgrade to increase difficulty</a>, which will occur after the <a href="../../releases/current-release-notes/">V21.0 release</a> and subsequent distribution of epoch v2 blocks, there will be two difficulty thresholds:</p>
+<p>The mainnet's base difficulty threshold is currently <code>fffffff800000000</code> for all send or change blocks and <code>fffffe0000000000</code> for all receive blocks. These split difficulties were set as part of the <a href="../../releases/network-upgrades/#increased-work-difficulty">network upgrade to increase difficulty</a> completed at the end of August 2020.</p>
+<p>Previous difficulty levels are outlined below as well for historical reference, but currently the epoch v2 thresholds are required when publishing new blocks to the network:</p>
 <table>
 <thead>
 <tr>
@@ -1651,7 +1650,8 @@ blake2b(\text{nonce} || \text{prev_block_hash}) \ge \text{threshold}
 </tr>
 </tbody>
 </table>
-<p>Although preparations can be done ahead of the upgrade, please find related considerations in the <a href="../../releases/network-upgrades/#increased-work-difficulty">network upgrade to increase difficulty</a> section.</p>
+<p>For a block to be valid, its work field must satisfy the above work equations using this value for threshold. Nodes also prioritize the order in which they confirm transactions based on how far above this threshold the work value is. This only happens in case of saturation.</p>
+<p>Due to prioritization, it may be desirable to generate work further above the threshold to guarantee faster processing by the network. To assist integrations with managing these work difficulty levels, nodes monitor the trend of difficulty seen on unconfirmed blocks, and expose that value via the <a href="../../commands/rpc-protocol/#active_difficulty"><code>active_difficulty</code></a> RPC.</p>
 <p><strong>Development node wallet behavior</strong></p>
 <p>The developer wallet included with the node is configured to pre-cache work at the base threshold and monitor any blocks it publishes to the network for confirmation. If they are not confirmed within 5 seconds, the difficulty on that block will be compared against the active difficulty seen on the network. If the block has a lower work value than the network, then new work generation is requested at the higher level.</p>
 <p><strong>Difficulty management for external integrations</strong></p>
@@ -1903,7 +1903,7 @@ blake2b(\text{nonce} || \text{prev_block_hash}) \ge \text{threshold}
     </div>
     
       <script src="../../assets/javascripts/vendor.df0def68.min.js"></script>
-      <script src="../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.separator": "[\\s\\-]+", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching"}</script>
+      <script src="../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"search.config.pipeline": "trimmer, stopWordFilter", "search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.other": "# matching documents", "search.config.lang": "en", "search.result.none": "No matching documents", "clipboard.copy": "Copy to clipboard", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({
