@@ -1491,14 +1491,12 @@
 <hr />
 <h2 id="benchmarks">Benchmarks<a class="headerlink" href="#benchmarks" title="Permanent link">&para;</a></h2>
 <h3 id="benchmark-commands">Benchmark commands<a class="headerlink" href="#benchmark-commands" title="Permanent link">&para;</a></h3>
-<p><strong>Node RPC or external work server</strong></p>
+<p><strong>Nano Work Server</strong></p>
+<p>The <a href="https://github.com/nanocurrency/nano-work-server">Nano Work Server</a> is the preferred approach for benchmarking and includes an <a href="https://github.com/nanocurrency/nano-work-server#benchmarking">example</a>.</p>
+<p><strong>Node RPC</strong></p>
 <ol>
-<li>Setup one of the following:<ul>
-<li>A node with RPC enabled and any desired work peer</li>
-<li>A standalone work server</li>
-</ul>
-</li>
-<li>Use the script from <a href="https://github.com/guilhermelawless/blake2b-pow-bench">blake2b-pow-bench</a></li>
+<li>Setup and run a node with RPC enabled, control enabled, and the desired configuration including work peers.</li>
+<li>Use the script from <a href="https://github.com/guilhermelawless/blake2b-pow-bench">blake2b-pow-bench</a>.</li>
 </ol>
 <p><strong>Node local work generation</strong></p>
 <p>Note that these commands do not use the configuration of the node. Prefer using the alternative above for that purpose, such as changing the number of threads for CPU work generation, or using work peers.</p>
@@ -1903,7 +1901,7 @@ blake2b(\text{nonce} || \text{prev_block_hash}) \ge \text{threshold}
     </div>
     
       <script src="../../assets/javascripts/vendor.df0def68.min.js"></script>
-      <script src="../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"search.config.pipeline": "trimmer, stopWordFilter", "search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.other": "# matching documents", "search.config.lang": "en", "search.result.none": "No matching documents", "clipboard.copy": "Copy to clipboard", "search.result.placeholder": "Type to start searching"}</script>
+      <script src="../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.other": "# matching documents", "search.result.none": "No matching documents"}</script>
       
       <script>
         app = initialize({
