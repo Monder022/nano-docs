@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://docs.nano.org/protocol-design/overview/">
+        <link rel="canonical" href="https://docs.nano.org/node-implementation/database/">
       
       
       <link rel="shortcut icon" href="../../images/favicon.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Protocol Design Overview | Nano Documentation - Nano Docs</title>
+        <title>Nano Node Implementation - Database - Nano Docs</title>
       
     
     
@@ -67,7 +67,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@nano">
   
-  <meta name="twitter:title" content="Protocol Design Overview | Nano Documentation">
+  <meta name="twitter:title" content="Nano Node Implementation - Database">
   
   
   <meta name="twitter:description" content="Official documentation for the Nano network, node and protocol">
@@ -77,9 +77,9 @@
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   
-  <meta property="og:title" content="Protocol Design Overview | Nano Documentation" />
+  <meta property="og:title" content="Nano Node Implementation - Database" />
   
-  <meta property="og:url" content="https://docs.nano.org/protocol-design/overview/" />
+  <meta property="og:url" content="https://docs.nano.org/node-implementation/database/" />
   <meta property="og:image" content="https://docs.nano.org/images/nano-docs-open-graph.png" />
   
   <meta name="og:description" content="Official documentation for the Nano network, node and protocol">
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#protocol-design-overview" class="md-skip">
+        <a href="#node-implementation-database" class="md-skip">
           Skip to content
         </a>
       
@@ -159,7 +159,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Protocol Design Overview | Nano Documentation
+              Nano Node Implementation - Database
             
           </span>
         </div>
@@ -333,20 +333,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../what-is-nano/contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../what-is-nano/exploring-more/" title="Exploring More" class="md-nav__link">
-      Exploring More
+    <a href="../../what-is-nano/living-whitepaper/" title="Living Whitepaper" class="md-nav__link">
+      Living Whitepaper
     </a>
   </li>
 
@@ -690,12 +678,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Protocol Design
@@ -713,155 +699,10 @@
           
           
 
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Overview
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" title="Overview" class="md-nav__link md-nav__link--active">
-      Overview
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#feature-details" class="md-nav__link">
-    Feature Details
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing-code-to-the-nano-node" class="md-nav__link">
-    Contributing code to the Nano node
-  </a>
-  
-    <nav class="md-nav" aria-label="Contributing code to the Nano node">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#about-the-code-base" class="md-nav__link">
-    About the code base
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    Testing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-collaboration" class="md-nav__link">
-    GitHub collaboration
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub collaboration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-process" class="md-nav__link">
-    Code Process
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-standard" class="md-nav__link">
-    Code standard
-  </a>
-  
-    <nav class="md-nav" aria-label="Code standard">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#formatting" class="md-nav__link">
-    Formatting
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coding-guidelines" class="md-nav__link">
-    Coding guidelines
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-and-scalabiliy-considerations" class="md-nav__link">
-    Performance and scalabiliy considerations
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security" class="md-nav__link">
-    Security
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#general-tips-for-contributors" class="md-nav__link">
-    General tips for contributors
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
 
   <li class="md-nav__item">
-    <a href="../distribution-and-units/" title="Distribution and Units" class="md-nav__link">
-      Distribution and Units
+    <a href="../../protocol-design/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
     </a>
   </li>
 
@@ -872,7 +713,43 @@
 
 
   <li class="md-nav__item">
-    <a href="../networking/" title="Networking" class="md-nav__link">
+    <a href="../../protocol-design/ledger/" title="Ledger" class="md-nav__link">
+      Ledger
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../protocol-design/blocks/" title="Blocks" class="md-nav__link">
+      Blocks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../protocol-design/work/" title="Work" class="md-nav__link">
+      Work
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../protocol-design/networking/" title="Networking" class="md-nav__link">
       Networking
     </a>
   </li>
@@ -884,8 +761,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../network-attacks/" title="Network Attacks" class="md-nav__link">
-      Network Attacks
+    <a href="../../protocol-design/orv-consensus/" title="ORV Consensus" class="md-nav__link">
+      ORV Consensus
     </a>
   </li>
 
@@ -896,8 +773,56 @@
 
 
   <li class="md-nav__item">
-    <a href="../signing-hashing-and-key-derivation/" title="Signing, Hashing and Key Derivation" class="md-nav__link">
+    <a href="../../protocol-design/attack-vectors/" title="Attack Vectors" class="md-nav__link">
+      Attack Vectors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../protocol-design/resource-usage/" title="Resource Usage" class="md-nav__link">
+      Resource Usage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../protocol-design/distribution-and-units/" title="Distribution and Units" class="md-nav__link">
+      Distribution and Units
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../protocol-design/signing-hashing-and-key-derivation/" title="Signing, Hashing and Key Derivation" class="md-nav__link">
       Signing, Hashing and Key Derivation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
+      Contributing
     </a>
   </li>
 
@@ -923,17 +848,223 @@
       
       
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Node Implementation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Node Implementation" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Node Implementation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/" title="Components" class="md-nav__link">
+      Components
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Database
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Database" class="md-nav__link md-nav__link--active">
+      Database
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ledger" class="md-nav__link">
+    Ledger
+  </a>
+  
+    <nav class="md-nav" aria-label="Ledger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocks" class="md-nav__link">
+    Blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pending-blocks" class="md-nav__link">
+    Pending blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accounts" class="md-nav__link">
+    Accounts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caching" class="md-nav__link">
+    Caching
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-cementing" class="md-nav__link">
+    Block cementing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-backends" class="md-nav__link">
+    Database backends
+  </a>
+  
+    <nav class="md-nav" aria-label="Database backends">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lmdb" class="md-nav__link">
+    LMDB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocksdb" class="md-nav__link">
+    RocksDB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../voting/" title="Voting" class="md-nav__link">
+      Voting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../work/" title="Work" class="md-nav__link">
+      Work
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       Releases
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Releases" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon"></span>
         Releases
       </label>
@@ -1053,98 +1184,71 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#feature-details" class="md-nav__link">
-    Feature Details
+  <a href="#ledger" class="md-nav__link">
+    Ledger
+  </a>
+  
+    <nav class="md-nav" aria-label="Ledger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocks" class="md-nav__link">
+    Blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pending-blocks" class="md-nav__link">
+    Pending blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accounts" class="md-nav__link">
+    Accounts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caching" class="md-nav__link">
+    Caching
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-cementing" class="md-nav__link">
+    Block cementing
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contributing-code-to-the-nano-node" class="md-nav__link">
-    Contributing code to the Nano node
+  <a href="#database-backends" class="md-nav__link">
+    Database backends
   </a>
   
-    <nav class="md-nav" aria-label="Contributing code to the Nano node">
+    <nav class="md-nav" aria-label="Database backends">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#about-the-code-base" class="md-nav__link">
-    About the code base
+  <a href="#lmdb" class="md-nav__link">
+    LMDB
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    Testing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-collaboration" class="md-nav__link">
-    GitHub collaboration
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub collaboration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-process" class="md-nav__link">
-    Code Process
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-standard" class="md-nav__link">
-    Code standard
-  </a>
-  
-    <nav class="md-nav" aria-label="Code standard">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#formatting" class="md-nav__link">
-    Formatting
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coding-guidelines" class="md-nav__link">
-    Coding guidelines
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-and-scalabiliy-considerations" class="md-nav__link">
-    Performance and scalabiliy considerations
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security" class="md-nav__link">
-    Security
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#general-tips-for-contributors" class="md-nav__link">
-    General tips for contributors
+  <a href="#rocksdb" class="md-nav__link">
+    RocksDB
   </a>
   
 </li>
@@ -1166,7 +1270,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/nanocurrency/nano-docs/edit/master/docs/protocol-design/overview.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/nanocurrency/nano-docs/edit/master/docs/node-implementation/database.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1174,213 +1278,30 @@
                   
                 
                 
-                <h1 id="protocol-design-overview">Protocol Design Overview<a class="headerlink" href="#protocol-design-overview" title="Permanent link">&para;</a></h1>
-<p>The Nano protocol is a complex piece of software aiming at a simple, singular goal: transfer value as efficiently as possible. Doing so on a network that is decentralized for the long-term involves many moving parts. Below are some detailed explanations of various pieces of the protocol intended for advanced developers and those with deep knowledge of the network.</p>
-<div class="admonition tip">
-<p class="admonition-title">Contributing to the code</p>
-<p>If you are interested in helping develop the C++ based Nano node we will help you out! Check out our details on <a href="/protocol-design/overview#contributing-code-to-the-nano-node">contributing code to the Nano node</a> to get started.</p>
-</div>
-<h2 id="feature-details">Feature Details<a class="headerlink" href="#feature-details" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/protocol-design/distribution-and-units/">Distribution and Units</a></td>
-<td>Original distribution details and Nano unit breakdowns</td>
-</tr>
-<tr>
-<td><a href="/protocol-design/networking/">Networking</a></td>
-<td>Details about the network protocols nodes use to communicate with peers</td>
-</tr>
-<tr>
-<td><a href="/protocol-design/network-attacks/">Network Attacks</a></td>
-<td>Explanation of some of the potential attack vectors on the Nano network</td>
-</tr>
-<tr>
-<td><a href="/protocol-design/signing-hashing-and-key-derivation/">Signing, Hashing and Key Derivation</a></td>
-<td>Details of the algorithms and functions used for these activities</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="node-implementation-database">Node Implementation - Database<a class="headerlink" href="#node-implementation-database" title="Permanent link">&para;</a></h1>
+<details class="info"><summary>Part of work in progress Living Whitepaper</summary><p>This page is part of the Living Whitepaper revisions currently underway to replace the original static whitepaper. These efforts include the <a href="/protocol-design/introduction">Protocol Design</a> and <a href="/node-implementation/introduction">Node Implementation</a> sections of the docs, which will cover and expand on details and topics covered in the <a href="/whitepaper/english">original whitepaper</a>.</p>
+<p>See the bottom of the page for related whitepaper sections and other related details. Some of the sections and headers on this page may be in draft form or just suggestions/framework for later consideration. If you are interested in helping with revisions please connect with us on the <code>#documentation</code> channel on our <a href="https://chat.nano.org">Discord server</a>.</p>
+</details>
+<h2 id="ledger">Ledger<a class="headerlink" href="#ledger" title="Permanent link">&para;</a></h2>
+<h3 id="blocks">Blocks<a class="headerlink" href="#blocks" title="Permanent link">&para;</a></h3>
+<h3 id="pending-blocks">Pending blocks<a class="headerlink" href="#pending-blocks" title="Permanent link">&para;</a></h3>
+<h3 id="accounts">Accounts<a class="headerlink" href="#accounts" title="Permanent link">&para;</a></h3>
+<h3 id="caching">Caching<a class="headerlink" href="#caching" title="Permanent link">&para;</a></h3>
 <hr />
-<h2 id="contributing-code-to-the-nano-node">Contributing code to the Nano node<a class="headerlink" href="#contributing-code-to-the-nano-node" title="Permanent link">&para;</a></h2>
-<h3 id="about-the-code-base">About the code base<a class="headerlink" href="#about-the-code-base" title="Permanent link">&para;</a></h3>
-<p>Nano is written in C++14 and supports Linux, macOS and Windows.</p>
-<p><strong>Libraries</strong></p>
-<p>We use Boost to help us write efficient cross platform code, including the async IO library for networking (asio).</p>
-<p>Make sure you have the correct <a href="https://github.com/nanocurrency/nano-node/search?utf8=%E2%9C%93&amp;q=find_package+%28Boost&amp;type=">Boost version</a> installed.</p>
-<p><strong>Submodules</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Details</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>cryptopp</td>
-<td>Provides the implementation for random number generator, SipHash, AES and other cryptographic schemes.</td>
-</tr>
-<tr>
-<td>phc&#x2011;winner&#x2011;argon2</td>
-<td>When encrypting with AES, the password first goes through key derivation, and argon2 is our hash of choice for doing that.</td>
-</tr>
-<tr>
-<td>lmdb</td>
-<td>The database library used for the ledger and wallet, with local patches for Windows. This is a very fast and portable key/value store with ordered keys. It is extremely resilient to crashes in the program, OS, and power-downs without corruption.</td>
-</tr>
-<tr>
-<td>miniupnp</td>
-<td>This library is used to do port mapping if the gateway supports it.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Qt Wallet</strong></p>
-<p>To build the GUI, set the <code>NANO_GUI</code> flag in cmake. The desktop wallet uses Qt5, but without the MOC compiler. Hence, you cannot use the signals and slots mechanism.</p>
-<p>The majority of the Qt wallet code resides in the <code>qt</code> subproject, while the QApplication startup code resides in <code>nano_wallet</code>.</p>
-<p><strong>Using CMake</strong></p>
-<p>CMake is used to generate build files and project files for various IDE's.</p>
-<p>Please familiarize yourself with basic cmake usage, such as how to change cache variables via the command line, ccmake or CMake GUI. This is much more convenient that editing the <code>CMakeLists.txt</code> file directly.</p>
-<p>Find out more about building in <a href="/integration-guides/build-options">Integration Guides Build Options</a>.</p>
-<h3 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h3>
-<p><strong>Add tests</strong></p>
-<p>If you add new functionality, adding unit tests to avoid regressions in the future is required.</p>
-<p>The easiest way to get started writing your first test is to base it off one of the existing tests. You'll find these in the <code>core_test</code> directory.</p>
-<p>Make sure the <code>NANO_TEST</code> cache variable in cmake is set. You should also switch the <code>ACTIVE_NETWORK</code> variable to nano_test_network. </p>
-<p><strong>Run tests before creating a pull request</strong></p>
-<p>Please run the tests before submitting a PR. Go to the build directory and run the <code>core_test</code> binary.</p>
-<p>If you get a lot of failures, such as <code>frontier_req.begin</code> failing, make sure <code>ACTIVE_NETWORK</code> is set to <code>nano_test_network</code></p>
-<h3 id="github-collaboration">GitHub collaboration<a class="headerlink" href="#github-collaboration" title="Permanent link">&para;</a></h3>
-<p>Communication is the key to working together efficiently. A good way to get in touch with the developers is to join the #development channel on <a href="https://chat.nano.org/">Discord</a>. If you have an idea of an improvement or new feature, consider discussing it first with the team, either on Discord, or by adding an issue. Maybe someone is already working on it, or have suggestions on how to improve on the idea.</p>
-<div class="admonition warning">
-<p class="admonition-title">Security Vulnerability Disclosure</p>
-<p><strong>Do NOT discuss potential security vulnerabilities on the issue tracker, public forums or open discussion channels</strong></p>
-<p>If you discover a bug you believe to pose a security risk to the Nano network, please contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#117;&#103;&#115;&#64;&#110;&#97;&#110;&#111;&#46;&#111;&#114;&#103;">&#98;&#117;&#103;&#115;&#64;&#110;&#97;&#110;&#111;&#46;&#111;&#114;&#103;</a> with a proof of concept with full details of the bug including:</p>
-<ul>
-<li>Repository of the bug</li>
-<li>High-level summary</li>
-<li>Detailed description</li>
-<li>Steps to reproduce</li>
-<li>Supporting material/references</li>
-<li>The potential security impact of the bug</li>
-</ul>
-</div>
-<h4 id="code-process">Code Process<a class="headerlink" href="#code-process" title="Permanent link">&para;</a></h4>
-<h5>Fork and do all your work on a branch</h5>
-<p>Nano prefers the standard GitHub workflow. You create a fork of the Nano repository, make branches for features/issues, and commit and push these. </p>
-<h5>Create pull requests</h5>
-<p>Before:</p>
-<ul>
-<li>Branch out of the <strong>develop</strong> branch. The <strong>master</strong> branch is only updated on new releases.</li>
-<li>Review your code locally. Have you followed the guidelines in this document?</li>
-<li>Run tests. Did you consider adding a test case for your feature?</li>
-<li>Run ASAN and TSAN to detect memory or threading bugs</li>
-<li>Commit and push your fork</li>
-<li>Create pull request on the upstream repository:<ul>
-<li>Make sure you add a description that clearly describes the purpose of the PR.</li>
-<li>If the PR solves one or more issues, please reference these in the description.</li>
-</ul>
-</li>
-</ul>
-<p>After:</p>
-<ul>
-<li>Check that CI completes successfully. If not, fix the problem and push an update.</li>
-<li>Respond to comments and reviews in a timely fashion.</li>
-</ul>
-<h5>Resolve conflicts</h5>
-<p>If time passes between your pull request (PR) submission and the team accepting it, merge conflicts may occur due to activity on develop, such as merging other PR's before yours. In order for your PR to be accepted, you must resolve these conflicts.</p>
-<p>The preferred process is to rebase your changes, resolve any conflicts, and push your changes again. <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
-<ul>
-<li>Check out your branch</li>
-<li><code>git fetch upstream</code></li>
-<li><code>git rebase upstream/develop</code></li>
-<li>Resolve conflicts in your favorite editor</li>
-<li><code>git add {filename}</code></li>
-<li><code>git rebase --continue</code></li>
-<li>Commit and push your branch</li>
-</ul>
-<p><strong>Consider squashing or amending commits</strong></p>
-<p>In the review process, you're likely to get feedback. You'll commit and push more changes, get more feedback, etc. </p>
-<p>This can lead to a messy git history, and can make stuff like bisecting harder.</p>
-<p>Once your PR is OK'ed, please squash the commits into a one.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
-<p>Note that you can also update the last commit with <code>git commit --amend</code>. Say your last commit had a typo. Instead of committing and having to squash it later, simply commit with amend and push the branch.</p>
-<h3 id="code-standard">Code standard<a class="headerlink" href="#code-standard" title="Permanent link">&para;</a></h3>
-<h4 id="formatting">Formatting<a class="headerlink" href="#formatting" title="Permanent link">&para;</a></h4>
-<p>clang-format is used to enforce most of the formatting rules, such as:</p>
-<ul>
-<li>Tabs for indentation.</li>
-<li>Open braces go on new lines.</li>
-<li>Space before open parenthesis.</li>
-<li>Space after comma.</li>
-</ul>
-<p>Please run <code>ci/clang-format-all.sh</code> before pushing your code to ensure that the formatting is good. If you want to do formatting from the IDE, chances are there's a plugin available. The definition file <code>.clang-format</code> is located in the project root directory.</p>
-<p>Make sure you set up your editor to use tabs. Use tabs for indentation, and spaces for alignment <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>. That way, you can use any tab size you want in your favorite editor, but the code will still look good for people with different settings. </p>
-<h4 id="coding-guidelines">Coding guidelines<a class="headerlink" href="#coding-guidelines" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Use <code>auto</code> type inference for local variables if it's clear from the context what the type will be. Use your best judgement, sometimes adding explicit types can increase readability <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
-<li>Handle exceptions, including IO exceptions for file and network operations.</li>
-<li>Be liberal with <code>assert</code>. Use asserts to check invariants, not potential runtime errors, which should be handled gracefully. Asserts are for detecting bugs, not error handling.</li>
-<li>Be liberal with <code>BOOST_LOG</code> statements, except in performance critical paths.</li>
-<li>Add comments to explain complex and subtle situations, but avoid comments that reiterates what the code already says.</li>
-<li>Use RAII and C++11 smart pointers to manage memory and other resources.</li>
-</ul>
-<h4 id="performance-and-scalabiliy-considerations">Performance and scalabiliy considerations<a class="headerlink" href="#performance-and-scalabiliy-considerations" title="Permanent link">&para;</a></h4>
-<ul>
-<li>When making changes, think about performance and scalability. Pick good data structures and think about algorithmic complexity. <ul>
-<li>For small data sets, std::vector should be your to-go container, as a linear scan through contiguous memory is often faster than any alternative.</li>
-<li>Nested loops yield quadratic behavior - is there an alternative? A typical example is removing an inner lookup loop with a map.</li>
-</ul>
-</li>
-<li>Make sure your change doesn't conflict with the scalability characteristics described in the white paper. </li>
-</ul>
-<h4 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h4>
-<p>Your code will be reviewed with security in mind, but please do your part before creating a pull request:</p>
-<ul>
-<li>
-<p>Familiarize yourself with best practices for writing secure C++ code. In particular:</p>
-<ul>
-<li>Consult <a href="https://wiki.sei.cmu.edu/confluence/display/cplusplus">https://wiki.sei.cmu.edu/confluence/display/cplusplus</a></li>
-<li>Avoid using ANSI C functions. Many of these are prone to buffer overruns.</li>
-<li>Avoid using C strings and direct buffer manipulation.</li>
-</ul>
-</li>
-<li>
-<p>Use static and dynamic analysis tools, such as valgrind, XCode instrumentation, linters and sanitizers. These tools are also great for debugging crashes and performance problems.</p>
-</li>
-</ul>
-<h3 id="general-tips-for-contributors">General tips for contributors<a class="headerlink" href="#general-tips-for-contributors" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Read the <a href="https://nano.org/en/whitepaper">white paper</a></li>
-<li>Peruse the code and don't be shy about asking questions if there are parts you don't understand.</li>
-<li>Make sure you understand the GitHub workflow.</li>
-<li>Participate in the community by reading and replying to GitHub issues, Reddit posts and tweets. This gives you a great insight into the pain points that exists with the software.</li>
-</ul>
-<div class="footnote">
+<h2 id="block-cementing">Block cementing<a class="headerlink" href="#block-cementing" title="Permanent link">&para;</a></h2>
 <hr />
-<ol>
-<li id="fn:1">
-<p><a href="http://www.acodersjourney.com/2016/02/c-11-auto/">http://www.acodersjourney.com/2016/02/c-11-auto/</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p><a href="https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/">https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<p><a href="https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/">https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-<li id="fn:4">
-<p><a href="https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit">https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
-</li>
-<li id="fn:5">
-<p><a href="https://dmitryfrank.com/articles/indent_with_tabs_align_with_spaces">https://dmitryfrank.com/articles/indent_with_tabs_align_with_spaces</a>&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+<h2 id="database-backends">Database backends<a class="headerlink" href="#database-backends" title="Permanent link">&para;</a></h2>
+<h3 id="lmdb">LMDB<a class="headerlink" href="#lmdb" title="Permanent link">&para;</a></h3>
+<h3 id="rocksdb">RocksDB<a class="headerlink" href="#rocksdb" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Existing whitepaper sections related to this page:</p>
+<ul>
+<li><a href="/whitepaper/english/#implementation">Implementation</a></li>
+</ul>
+<p>Other content related to this page:</p>
+<ul>
+<li><a href="../../running-a-node/ledger-management/">Ledger Management guide</a></li>
+</ul>
                 
                   
                 
@@ -1409,8 +1330,8 @@
         <!-- Link to previous page -->
         
           <a
-            href="../../commands/command-line-interface/"
-            title="Command Line Interface"
+            href="../components/"
+            title="Components"
             class="md-footer-nav__link md-footer-nav__link--prev"
             rel="prev"
           >
@@ -1422,7 +1343,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Command Line Interface
+                Components
               </div>
             </div>
           </a>
@@ -1431,8 +1352,8 @@
         <!-- Link to next page -->
         
           <a
-            href="../distribution-and-units/"
-            title="Distribution and Units"
+            href="../voting/"
+            title="Voting"
             class="md-footer-nav__link md-footer-nav__link--next"
             rel="next"
           >
@@ -1441,7 +1362,7 @@
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Distribution and Units
+                Voting
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1567,7 +1488,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.df0def68.min.js"></script>
-      <script src="../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.other": "# matching documents", "search.result.none": "No matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching", "clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.result.other": "# matching documents", "search.result.one": "1 matching document"}</script>
       
       <script>
         app = initialize({

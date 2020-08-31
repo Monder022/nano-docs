@@ -8,11 +8,7 @@
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nano.org/what-is-nano/contributing/</loc>
-     <lastmod>2020-08-31</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.nano.org/what-is-nano/exploring-more/</loc>
+     <loc>https://docs.nano.org/what-is-nano/living-whitepaper/</loc>
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -100,11 +96,19 @@
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nano.org/protocol-design/overview/</loc>
+     <loc>https://docs.nano.org/protocol-design/introduction/</loc>
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nano.org/protocol-design/distribution-and-units/</loc>
+     <loc>https://docs.nano.org/protocol-design/ledger/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/protocol-design/blocks/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/protocol-design/work/</loc>
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -112,7 +116,19 @@
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nano.org/protocol-design/network-attacks/</loc>
+     <loc>https://docs.nano.org/protocol-design/orv-consensus/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/protocol-design/attack-vectors/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/protocol-design/resource-usage/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/protocol-design/distribution-and-units/</loc>
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -120,7 +136,35 @@
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://docs.nano.org/node-implementation/contributing/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://docs.nano.org/whitepaper/english/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/node-implementation/introduction/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/node-implementation/components/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/node-implementation/database/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/node-implementation/voting/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/node-implementation/work/</loc>
+     <lastmod>2020-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.nano.org/node-implementation/contributing/</loc>
      <lastmod>2020-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
