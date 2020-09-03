@@ -88,6 +88,8 @@
   
   <meta property="og:site_name" content="Nano Docs" />
 
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
 
   </head>
   
@@ -110,6 +112,22 @@
       
     </div>
     <div data-md-component="announce">
+      
+        <aside class="md-announce">
+          <div class="md-announce__inner md-grid md-typeset">
+            
+<a href="/releases/current-release-notes/" height="100" style="color:white;">
+  <span class="iconify" data-icon="octicon-tag-16" data-inline="false"></span>
+  <span style="padding-left: 0.3em;"><strong>Nano node V21.2 now available!</strong> Upgrades recommended for all node operators</span>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8" fill="none" height="8px">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.35355 0.146447C7.15829 -0.0488156 6.84171 -0.0488156 6.64645 0.146447C6.45118 0.341709 6.45118 0.658291 6.64645 0.853553L9.29287 3.49998H0.5C0.223858 3.49998 0 3.72383 0 3.99998C0 4.27612 0.223858 4.49998 0.5 4.49998H9.29292L6.64645 7.14645C6.45118 7.34171 6.45118 7.65829 6.64645 7.85355C6.84171 8.04882 7.15829 8.04882 7.35355 7.85355L10.8536 4.35355C11.0488 4.15829 11.0488 3.84171 10.8536 3.64645L7.35355 0.146447Z" fill="#ffffff"></path>
+    </svg>
+  </div>
+</a>
+
+          </div>
+        </aside>
       
     </div>
     
@@ -1217,12 +1235,12 @@
 </thead>
 <tbody>
 <tr>
-<td>21.1</td>
+<td>21.2</td>
 <td>18</td>
 <td>18</td>
-<td>2020-07-14</td>
-<td><a href="/releases/current-release-notes">V21.1</a></td>
-<td><a href="https://github.com/nanocurrency/nano-node/releases/tag/V21.1">Release</a> - <a href="https://github.com/nanocurrency/nano-node/milestone/21">Milestone</a> - <a href="https://github.com/nanocurrency/nano-node/compare/4631c10c0eb67b0c62328a7ed8cef5f3169633f9...V21.1">Changelog</a></td>
+<td>2020-09-03</td>
+<td><a href="/releases/current-release-notes">V21.2</a></td>
+<td><a href="https://github.com/nanocurrency/nano-node/releases/tag/V21.2">Release</a> - <a href="https://github.com/nanocurrency/nano-node/milestone/21">Milestone</a> - <a href="https://github.com/nanocurrency/nano-node/compare/9e65cf68664a3bcbe2734fed0b1cb6df264bce58...V21.2">Changelog</a></td>
 </tr>
 </tbody>
 </table>
@@ -1234,8 +1252,6 @@
 <p><strong>Solution:</strong> For now a workaround is needed to increase the limit. The method depends on the specific macOS version, but some people had success with the recipe in <a href="https://superuser.com/a/1171028">https://superuser.com/a/1171028</a>.</p>
 </li>
 </ul>
-</details>
-<details class="warning"><summary>Known Issue Windows V21: Crash when using config <code>node.logging.stable_log_filename</code></summary><p>Setting <code>node.logging.stable_log_filename</code> configuration option to <code>true</code> results in a node crash on Windows in V21.0 and V21.1, after a node restart. This must be set to <code>false</code>.</p>
 </details>
 <p><strong>Builds and Commands</strong></p>
 <table>
@@ -1249,38 +1265,38 @@
 <tbody>
 <tr>
 <td>Universal Linux</td>
-<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.1-Linux.tar.bz2">https://repo.nano.org/live/binaries/nano-node-V21.1-Linux.tar.bz2</a></td>
-<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.1-Linux.tar.bz2.sha256">SHA256 Checksum</a></td>
+<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.2-Linux.tar.bz2">https://repo.nano.org/live/binaries/nano-node-V21.2-Linux.tar.bz2</a></td>
+<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.2-Linux.tar.bz2.sha256">SHA256 Checksum</a></td>
 </tr>
 <tr>
 <td>Debian</td>
-<td><a href="http://repo.nano.org/live/binaries/nano-node-V21.1-Linux.deb">http://repo.nano.org/live/binaries/nano-node-V21.1-Linux.deb</a></td>
-<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.1-Linux.deb.sha256">SHA256 Checksum</a></td>
+<td><a href="http://repo.nano.org/live/binaries/nano-node-V21.2-Linux.deb">http://repo.nano.org/live/binaries/nano-node-V21.2-Linux.deb</a></td>
+<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.2-Linux.deb.sha256">SHA256 Checksum</a></td>
 </tr>
 <tr>
 <td>macOS</td>
-<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.1-Darwin.dmg">https://repo.nano.org/live/binaries/nano-node-V21.1-Darwin.dmg</a></td>
-<td><a href="https://s3.us-east-2.amazonaws.com/repo.nano.org/live/binaries/nano-node-V21.1-Darwin.dmg.sha256">SHA256 Checksum</a></td>
+<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.2-Darwin.dmg">https://repo.nano.org/live/binaries/nano-node-V21.2-Darwin.dmg</a></td>
+<td><a href="https://s3.us-east-2.amazonaws.com/repo.nano.org/live/binaries/nano-node-V21.2-Darwin.dmg.sha256">SHA256 Checksum</a></td>
 </tr>
 <tr>
 <td>Windows (exe)</td>
-<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.1-win64.exe">https://repo.nano.org/live/binaries/nano-node-V21.1-win64.exe</a></td>
-<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.1-win64.exe.sha256">SHA256 Checksum</a></td>
+<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.2-win64.exe">https://repo.nano.org/live/binaries/nano-node-V21.2-win64.exe</a></td>
+<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.2-win64.exe.sha256">SHA256 Checksum</a></td>
 </tr>
 <tr>
 <td>Windows (zip)</td>
-<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.1-win64.zip">https://repo.nano.org/live/binaries/nano-node-V21.1-win64.zip</a></td>
-<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.1-win64.zip.sha256">SHA256 Checksum</a></td>
+<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.2-win64.zip">https://repo.nano.org/live/binaries/nano-node-V21.2-win64.zip</a></td>
+<td><a href="https://repo.nano.org/live/binaries/nano-node-V21.2-win64.zip.sha256">SHA256 Checksum</a></td>
 </tr>
 <tr>
 <td>Docker</td>
-<td><code>docker pull nanocurrency/nano:V21.1</code> or <code>docker pull nanocurrency/nano:latest</code><br />See <a href="/running-a-node/node-setup/#pulling-the-docker-image">Pulling the Docker Image</a> for more details.</td>
+<td><code>docker pull nanocurrency/nano:V21.2</code> or <code>docker pull nanocurrency/nano:latest</code><br />See <a href="/running-a-node/node-setup/#pulling-the-docker-image">Pulling the Docker Image</a> for more details.</td>
 <td></td>
 </tr>
 <tr>
 <td>RHEL/CentOS rpm</td>
-<td><code>sudo rpm -iUvh https://repo.nano.org/live/binaries/nanocurrency-21.1-21.el7.x86_64.rpm</code><br />This installs <code>nano_node</code> and <code>nano_rpc</code> to <code>/usr/bin</code>.</td>
-<td><a href="https://repo.nano.org/live/binaries/nanocurrency-21.1-21.el7.x86_64.rpm.sha256">SHA256 Checksum</a></td>
+<td><code>sudo rpm -iUvh https://repo.nano.org/live/binaries/nanocurrency-21.2-21.el7.x86_64.rpm</code><br />This installs <code>nano_node</code> and <code>nano_rpc</code> to <code>/usr/bin</code>.</td>
+<td><a href="https://repo.nano.org/live/binaries/nanocurrency-21.2-21.el7.x86_64.rpm.sha256">SHA256 Checksum</a></td>
 </tr>
 </tbody>
 </table>
@@ -1316,10 +1332,38 @@
 <hr />
 <h2 id="active-releases">Active Releases<a class="headerlink" href="#active-releases" title="Permanent link">&para;</a></h2>
 <p>The following releases can still actively participate on the network by peering with other nodes of the same versions. Any nodes running versions earlier than these will no longer peer with the latest and fall out of sync with the network.</p>
-<div class="admonition warning">
-<p class="admonition-title">V19 and V20 will be depeered with epoch v2 distribution</p>
-<p>Although V19 and V20 are currently listed as active releases, once <a href="../network-upgrades/#increased-work-difficulty">epoch v2 distribution</a> begins, all V21+ nodes will begin depeering them and the only active version will be V21+. All nodes will need to upgrade to V21+ to continue participating on the network.</p>
-</div>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Protocol</th>
+<th>Database</th>
+<th>Release Date</th>
+<th>Release Notes</th>
+<th>GitHub Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21.2</td>
+<td>18</td>
+<td>18</td>
+<td>2020-09-03</td>
+<td><a href="/releases/current-release-notes">V21.2</a></td>
+<td><a href="https://github.com/nanocurrency/nano-node/releases/tag/V21.2">Release</a> - <a href="https://github.com/nanocurrency/nano-node/milestone/21">Milestone</a> - <a href="https://github.com/nanocurrency/nano-node/compare/9e65cf68664a3bcbe2734fed0b1cb6df264bce58...V21.2">Changelog</a></td>
+</tr>
+</tbody>
+</table>
+<details class="warning"><summary>Known Issue V19+: macOS 'Too many open files'</summary><ul>
+<li>
+<p><strong>Issue:</strong> The following error can be seen when attempting to run a full node on macOS using the built-in Qt wallet or other GUI-based wallets: "Exception while running wallet: open: Too many open files". This is due to macOS having a very low default file descriptor limit and V19.0 uses more of them after the move to TCP.</p>
+</li>
+<li>
+<p><strong>Solution:</strong> For now a workaround is needed to increase the limit. The method depends on the specific macOS version, but some people had success with the recipe in <a href="https://superuser.com/a/1171028">https://superuser.com/a/1171028</a>.</p>
+</li>
+</ul>
+</details>
+<hr />
 <table>
 <thead>
 <tr>
@@ -1390,7 +1434,9 @@
 <details class="warning"><summary>Known Issue Windows V21: Crash when using config <code>node.logging.stable_log_filename</code></summary><p>Setting <code>node.logging.stable_log_filename</code> configuration option to <code>true</code> results in a node crash on Windows in V21.0 and V21.1, after a node restart. This must be set to <code>false</code>.</p>
 </details>
 <hr />
-<table>
+<h2 id="inactive-releases">Inactive Releases<a class="headerlink" href="#inactive-releases" title="Permanent link">&para;</a></h2>
+<p>The following versions are no longer peered with by nodes running the active versions above and will not work properly communicate if run on the network. The details below are for historical purposes only.</p>
+<details class="info"><summary>Inactive Releases</summary><table>
 <thead>
 <tr>
 <th>Node</th>
@@ -1410,39 +1456,6 @@
 <td><a href="/releases/previous-release-notes/#v200">V20.0</a></td>
 <td><a href="https://github.com/nanocurrency/nano-node/releases/tag/V20.0">Release</a> - <a href="https://github.com/nanocurrency/nano-node/milestone/10">Milestone</a> - <a href="https://github.com/nanocurrency/nano-node/compare/V19.0...V20.0">Changelog</a></td>
 </tr>
-</tbody>
-</table>
-<details class="warning"><summary>Known Issue V19+: macOS 'Too many open files'</summary><ul>
-<li>
-<p><strong>Issue:</strong> The following error can be seen when attempting to run a full node on macOS using the built-in Qt wallet or other GUI-based wallets: "Exception while running wallet: open: Too many open files". This is due to macOS having a very low default file descriptor limit and V19.0 uses more of them after the move to TCP.</p>
-</li>
-<li>
-<p><strong>Solution:</strong> For now a workaround is needed to increase the limit. The method depends on the specific macOS version, but some people had success with the recipe in <a href="https://superuser.com/a/1171028">https://superuser.com/a/1171028</a>.</p>
-</li>
-</ul>
-</details>
-<details class="warning"><summary>Known Issue V20: Peers stake reporting inaccurate (Windows only)</summary><ul>
-<li>
-<p><strong>Issue:</strong> For Windows builds only, when calling <a href="/commands/rpc-protocol/#confirmation_quorum">confirmation_quorum RPC</a> the <code>peers_stake_total</code> amount returned may be inaccurate, returning a range from the correct full peer stake amount down to 0.</p>
-</li>
-<li>
-<p><strong>Solution:</strong> A solution to the issue has been found and as this is a reporting issue only, the fix will be included in the next released version. For those manually building the node, patching the <a href="https://github.com/nanocurrency/nano-node/pull/2405">fix pull request</a> onto the <a href="https://github.com/nanocurrency/nano-node/tree/V20.0">V20.0 tag</a> can resolve the issue now. Or alternatively, building on the V20.0 tag with <code>RelWithDebInfo</code> option, see <a href="/integration-guides/build-options/#setup">Build Instructions for Windows</a>.</p>
-</li>
-</ul>
-</details>
-<hr />
-<table>
-<thead>
-<tr>
-<th>Node</th>
-<th>Protocol</th>
-<th>Database</th>
-<th>Release Date</th>
-<th>Release Notes</th>
-<th>GitHub Links</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>19.0</td>
 <td>17</td>
@@ -1451,32 +1464,6 @@
 <td><a href="/releases/previous-release-notes/#v190">V19.0</a></td>
 <td><a href="https://github.com/nanocurrency/nano-node/releases/tag/V19.0">Release</a> - <a href="https://github.com/nanocurrency/nano-node/milestone/9">Milestone</a> - <a href="https://github.com/nanocurrency/nano-node/compare/V18.0...V19.0">Changelog</a></td>
 </tr>
-</tbody>
-</table>
-<details class="warning"><summary>Known Issue V19+: macOS 'Too many open files'</summary><ul>
-<li>
-<p><strong>Issue:</strong> The following error can be seen when attempting to run a full node on macOS using the built-in Qt wallet or other GUI-based wallets: "Exception while running wallet: open: Too many open files". This is due to macOS having a very low default file descriptor limit and V19.0 uses more of them after the move to TCP.</p>
-</li>
-<li>
-<p><strong>Solution:</strong> For now a workaround is needed to increase the limit. The method depends on the specific macOS version, but some people had success with the recipe in <a href="https://superuser.com/a/1171028">https://superuser.com/a/1171028</a>.</p>
-</li>
-</ul>
-</details>
-<hr />
-<h2 id="inactive-releases">Inactive Releases<a class="headerlink" href="#inactive-releases" title="Permanent link">&para;</a></h2>
-<p>The following versions are no longer peered with by nodes running the active versions above and will not work properly communicate if run on the network. The details below are for historical purposes only.</p>
-<details class="info"><summary>Inactive Releases</summary><table>
-<thead>
-<tr>
-<th>Node</th>
-<th>Protocol</th>
-<th>Database</th>
-<th>Release Date</th>
-<th>Release Notes</th>
-<th>GitHub Links</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>18.0</td>
 <td>16</td>
@@ -1829,7 +1816,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.none": "No matching documents", "search.config.lang": "en", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "clipboard.copied": "Copied to clipboard", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.other": "# matching documents", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
       
       <script>
         app = initialize({
